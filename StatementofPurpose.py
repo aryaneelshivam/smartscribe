@@ -14,7 +14,7 @@ model = genai.GenerativeModel('gemini-1.5-pro')
 st.title(":orange[Smart]Scribe")
 col1,col2,col3 = st.columns(3)
 with col1:
-	st.page_link("smartscribe.py", label="Statement of Purpose", icon="📝")
+	st.page_link("StatementofPurpose.py", label="Statement of Purpose", icon="📝")
 with col2:
 	st.page_link("pages/Memorandum of Understanding.py", label="Memorandum", icon="📮")
 with col3:
