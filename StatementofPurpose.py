@@ -19,7 +19,9 @@ with col2:
 	st.page_link("pages/Memorandum of Understanding.py", label="Memorandum", icon="📮")
 with col3:
 	st.page_link("pages/Privacy Policy.py", label="Privacy Policy", icon="🤫")
-
+col4, col5, col6 = st.columns(3)
+with col4:
+    st.page_link("pages/Non Disclosure Agreement.py", label="Non Disclosure", icon="🚩")
 sec1, sec2 = st.columns(2)
 with sec1:
 	name = st.text_input("Your name", placeholder="Aryaneel Shivam")
