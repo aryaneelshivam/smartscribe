@@ -12,6 +12,7 @@ genai.configure(api_key=Google)
 model = genai.GenerativeModel('gemini-1.5-pro')
 
 st.title(":orange[Smart]Scribe")
+st.sidebar.info("In cases when error appears while drafting document(s) hit the draft button once more.",icon="💡")
 col1,col2,col3 = st.columns(3)
 with col1:
     st.page_link("StatementofPurpose.py", label="Statement of Purpose", icon="📝")
