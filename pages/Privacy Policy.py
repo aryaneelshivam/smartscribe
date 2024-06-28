@@ -33,7 +33,7 @@ if selected == "Accurate":
 	temp = 0.0
 if selected == "Medium":
 	temp = 0.5
-if selected = "Creative":
+if selected == "Creative":
 	temp = 1.0
 
 col1,col2,col3 = st.columns(3)
