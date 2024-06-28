@@ -1,5 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
+from streamlit_option_menu import option_menu
+
 
 st.set_page_config(
     page_title="SmartScribe",
