@@ -22,7 +22,8 @@ with st.sidebar:
 		menu_title="Temperature",
 		options=["home","pages","about"],
 		menu_icon="chat-dots-fill",
-		default_index=0
+		default_index=0,
+		orientation="horizontal"
 	)
 	
 
