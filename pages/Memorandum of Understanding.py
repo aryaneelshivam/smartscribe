@@ -28,7 +28,7 @@ with st.sidebar:
 	)
 
 #temperature selection conditions
-if selecte == "Accurate":
+if selected == "Accurate":
 	temp = 0.0
 if selected == "Medium":
 	temp = 0.5
