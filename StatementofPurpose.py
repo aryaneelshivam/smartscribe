@@ -68,7 +68,7 @@ if writestatement:
 	try:
 		with st.spinner("SmartScribe is drafting your statement of purpose..."):
 			prompt = f"Write a statement of purpose for {name} applying to {university} in the country {country} in {city}, academic background includes marks obtained in class 10 {marks10} and in class 12 {marks11} under {board}, wants to pursure {course} aiming to get a job in {job} applying for {option}."
-			response = model.generate_content(prompt)
+			response = model.generate_content(prompt, generation_config=genai.types.GenerationConfig(temperature=1.0))
 			conv = st.write(response.text)
 
 	except:
