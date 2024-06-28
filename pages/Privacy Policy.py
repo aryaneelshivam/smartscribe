@@ -27,7 +27,14 @@ with st.sidebar:
 		icons=["circle-fill","circle-half","circle"],
 		#orientation="horizontal"
 	)
-	
+
+#temperature selection conditions
+if selected == "Accurate":
+	temp = 0.0
+if selected == "Medium":
+	temp = 0.5
+if selected = "Creative":
+	temp = 1.0
 
 col1,col2,col3 = st.columns(3)
 with col1:
@@ -97,7 +104,7 @@ if generate:
 							Rights granted to users {userrights}
 							About the company {desc}"""
 
-			response = model.generate_content(prompt)
+			response = model.generate_content(prompt, generation_config=genai.types.GenerationConfig(temperature=temp))
 			conv = st.write(response.text)
 
 	except:
