@@ -1,5 +1,6 @@
 import streamlit as st
 import google.generativeai as genai
+from streamlit_option_menu import option_menu
 
 st.set_page_config(
     page_title="SmartScribe",
@@ -13,6 +14,16 @@ model = genai.GenerativeModel('gemini-1.5-pro')
 
 st.title(":orange[Smart]Scribe")
 st.sidebar.info("In cases when error appears while drafting document(s) hit the draft button once more.",icon="💡")
+
+
+#options menu
+with st.sidebar:
+	selected = option_menu(
+		menu_title="Main menu",
+		options=["home","pages","about"],
+	)
+	
+
 col1,col2,col3 = st.columns(3)
 with col1:
 	st.page_link("StatementofPurpose.py", label="Statement of Purpose", icon="📝")
