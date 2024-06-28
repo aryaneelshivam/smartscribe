@@ -21,7 +21,7 @@ with st.sidebar:
 	selected = option_menu(
 		menu_title="Temperature",
 		options=["home","pages","about"],
-		menu_icon="",
+		menu_icon="chats-dots-filled",
 		default_index=0
 	)
 	
