@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 st.set_page_config(
     page_title="SmartScribe",
     page_icon="🧠",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 
 Google = 'AIzaSyDtl-9-hd5-JIXTnrYhf57_lQKsXm3Ksp0'
