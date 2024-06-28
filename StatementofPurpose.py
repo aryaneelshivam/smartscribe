@@ -23,8 +23,8 @@ with st.sidebar:
 		options=["home","pages","about"],
 		menu_icon="chat-dots-fill",
 		default_index=0,
-		icons=["","",""],
-		orientation="horizontal"
+		icons=["circle-fill","circle-half","circles"],
+		#orientation="horizontal"
 	)
 	
 
