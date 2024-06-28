@@ -19,8 +19,10 @@ st.sidebar.info("In cases when error appears while drafting document(s) hit the 
 #options menu
 with st.sidebar:
 	selected = option_menu(
-		menu_title="Main menu",
+		menu_title="Temperature",
 		options=["home","pages","about"],
+		menu_icon=None,
+		default_index=0
 	)
 	
 
