@@ -19,11 +19,11 @@ st.sidebar.info("In cases when error appears while drafting document(s) hit the 
 #options menu
 with st.sidebar:
 	selected = option_menu(
-		menu_title="Temperature",
-		options=["home","pages","about"],
+		menu_title="Draft Mode",
+		options=["Accurate","Medium","Creative"],
 		menu_icon="chat-dots-fill",
 		default_index=0,
-		icons=["circle-fill","circle-half","circles"],
+		icons=["circle-fill","circle-half","circle"],
 		#orientation="horizontal"
 	)
 	
